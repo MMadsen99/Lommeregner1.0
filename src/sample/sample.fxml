@@ -5,19 +5,18 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="317.0" prefWidth="373.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="317.0" prefWidth="373.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
       <Label layoutX="80.0" layoutY="41.0" text="First" />
       <Label layoutX="71.0" layoutY="104.0" text="Second" />
       <TextField fx:id="Text1" layoutX="168.0" layoutY="36.0" />
       <TextField fx:id="Text2" layoutX="168.0" layoutY="99.0" />
       <TextField fx:id="TextResult" layoutX="168.0" layoutY="221.0" />
-      <Button layoutX="214.0" layoutY="158.0" mnemonicParsing="false" text="-" />
+      <Button layoutX="214.0" layoutY="158.0" mnemonicParsing="false" onAction="#minus" text="-" />
       <Label layoutX="75.0" layoutY="226.0" text="Result" />
       <Label layoutX="200.0" layoutY="270.0" text="Lommeregner 1.0" />
-      <Button layoutX="168.0" layoutY="158.0" mnemonicParsing="false" text="+" />
-      <Button layoutX="260.0" layoutY="158.0" mnemonicParsing="false" text="*" />
-      <Button layoutX="297.0" layoutY="158.0" mnemonicParsing="false" text="/" />
+      <Button layoutX="168.0" layoutY="158.0" mnemonicParsing="false" onAction="#plus" text="+" />
+      <Button layoutX="260.0" layoutY="158.0" mnemonicParsing="false" onAction="#gange" text="*" />
+      <Button layoutX="297.0" layoutY="158.0" mnemonicParsing="false" onAction="#dividere" text="/" />
    </children>
 </AnchorPane>
